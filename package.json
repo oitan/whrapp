@@ -1,0 +1,52 @@
+{
+    "name": "whrapp",
+    "description": "a flexible and extensible WhatsApp bot framework",
+    "version": "0.0.0-alpha",
+    "author": "oitan",
+    "license": "MIT",
+    "engines": {
+        "node": ">=22.0.0"
+    },
+    "type": "module",
+    "homepage": "https://github.com/oitan/whrapp",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/oitan/whrapp"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "esbuild": "^0.24.0"
+    },
+    "files": [
+        "out/"
+    ],
+    "main": "./out/mod.js",
+    "types": "./out/mod.d.ts",
+    "exports": {
+        ".": {
+            "types": "./out/mod.d.ts",
+            "node": "./out/mod.js"
+        },
+        "./types": {
+            "types": "./out/types.d.ts",
+            "default": "./out/types.js"
+        }
+    },
+    "typesVersions": {
+        "*": {
+            "types": [
+                "out/types"
+            ]
+        }
+    },
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "api",
+        "client",
+        "framework",
+        "library",
+        "whrapp",
+        "sdk"
+    ]
+}
